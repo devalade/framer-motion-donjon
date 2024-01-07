@@ -1,4 +1,4 @@
-import { motion, useAnimate, useAnimation, useInView } from 'framer-motion';
+import { motion, useAnimation, useInView } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 
 export default function StaggerAnimation() {
