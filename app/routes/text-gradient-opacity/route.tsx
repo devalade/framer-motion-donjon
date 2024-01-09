@@ -8,15 +8,26 @@ export default function TextGradientOpacity() {
 		offset: ['start 0.9', 'start 0.25'],
 	});
 	return (
-		<div className='bg-slate-800'>
-			<div className='w-full h-screen text-center flex justify-center items-center'>
-				<p className='text-7xl font-semibold text-white'>Content</p>
+		<div className='font-lexend text-left text-white text-8xl font-semibold '>
+			<div className='w-full h-screen flex justify-center items-center bg-[#355C7D]'>
+				<div className='max-w-5xl mx-auto w-full px-4'>
+					<p className=''>Seamless animations & interactions that wow.</p>
+				</div>
 			</div>
-			<div className='w-full h-screen text-center flex justify-center items-center'>
-				<Words value='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ullam doloribus autem voluptate, natus illum accusantium corrupti velit vitae, dolorum illo dolor omnis fugiat? Rerum porro numquam quos eveniet ratione.' />
+			<div className='w-full h-screen text-center flex justify-center items-center bg-[#725A7A] '>
+				<div className='max-w-5xl mx-auto w-full px-4'>
+					<Words value='Butter-smooth, 60fps animations leaving lag in the dust.' />
+				</div>
 			</div>
-			<div className='w-full h-screen text-center flex justify-center items-center'>
-				<p className='text-7xl font-semibold text-white'>Content</p>
+			<div className='w-full h-screen text-center flex justify-center items-center bg-[#C56C86]'>
+				<div className='max-w-5xl mx-auto w-full px-4'>
+					<Words value='Unleash creativity with playful effects & physics.' />
+				</div>
+			</div>
+			<div className='w-full h-screen text-center flex justify-center items-center bg-[#FF7582]'>
+				<div className='max-w-5xl mx-auto w-full px-4'>
+					<Words value='Effortless React integration, plays nice with everyone.' />
+				</div>
 			</div>
 		</div>
 	);
@@ -29,10 +40,7 @@ function Paragraph({ value }: { value: string }) {
 		offset: ['start 0.9', 'start 0.25'],
 	});
 	return (
-		<motion.p
-			style={{ opacity: scrollYProgress }}
-			ref={element}
-			className='text-3xl font-semibold text-white text-left'>
+		<motion.p style={{ opacity: scrollYProgress }} ref={element} className=''>
 			{value}
 		</motion.p>
 	);
@@ -46,7 +54,7 @@ function Words({ value }: { value: string }) {
 	});
 	const words = value.split(' ');
 	return (
-		<p ref={element} className='flex flex-wrap text-3xl font-semibold text-white text-left'>
+		<p ref={element} className='flex flex-wrap '>
 			{words.map((word, index) => {
 				const start = index / words.length;
 				const end = start + 1 / words.length;
