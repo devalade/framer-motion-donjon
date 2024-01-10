@@ -6,6 +6,7 @@ export default {
 		extend: {
 			fontFamily: {
 				lexend: ['Lexend'],
+				poppins: ['Poppins'],
 			},
 		},
 	},
