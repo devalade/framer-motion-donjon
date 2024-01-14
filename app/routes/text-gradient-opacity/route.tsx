@@ -1,12 +1,7 @@
 import { MotionValue, motion, useScroll, useTransform } from 'framer-motion';
-import { PropsWithChildren, useEffect, useRef } from 'react';
+import { PropsWithChildren, useRef } from 'react';
 
 export default function TextGradientOpacity() {
-	const element = useRef(null);
-	const { scrollYProgress } = useScroll({
-		target: element,
-		offset: ['start 0.9', 'start 0.25'],
-	});
 	return (
 		<div className='font-lexend text-left text-white text-8xl font-semibold '>
 			<div className='w-full h-screen flex justify-center items-center bg-[#355C7D]'>
